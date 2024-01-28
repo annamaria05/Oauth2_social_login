@@ -2,8 +2,8 @@ spring:
   datasource:
     # Configurazione delle proprietà del datasource per il database MySQL
     url: jdbc:mysql://localhost:3306/spring_social?useSSL=false&allowPublicKeyRetrieval=true
-    username: root
-    password: root
+    username: tuo_username
+    password: tua_password
 
   jpa:
     show-sql: true
@@ -19,24 +19,24 @@ spring:
         registration:
           google:
             # Configurazione delle credenziali OAuth2 per l'autenticazione tramite Google
-            clientId: 105746462614-78qkb8jq81b3qic543glmqr97pua5df2.apps.googleusercontent.com
-            clientSecret: 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
+            clientId: <client_id>
+            clientSecret: <client_secret>
             redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
             scope:
               - email
               - profile
           facebook:
             # Configurazione delle credenziali OAuth2 per l'autenticazione tramite Facebook
-            clientId: 741165430960262
-            clientSecret: 2a25a378d1305805cfc20417f4b3a236
+            clientId: <client_id>
+            clientSecret: <client_secret>
             redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
             scope:
               - email
               - public_profile
           github:
             # Configurazione delle credenziali OAuth2 per l'autenticazione tramite GitHub
-            clientId: 75eeb84c5ad44ca077bd
-            clientSecret: 189b05e2a58179fc3f51bdd929567aeacd9c4c2a
+            clientId: <client_id>
+            clientSecret: <client_secret>
             redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
             scope:
               - user:email

@@ -1,0 +1,91 @@
+/*Stile registrazione*/
+
+/* Container principale per la registrazione */
+.signup-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Contenuto del modulo di registrazione */
+.signup-content {
+    background: #fff;
+    box-shadow: 0 1px 11px #004A51A1;
+    border-radius: 2px;
+    width: 500px;
+    display: inline-block;
+    margin-top: 30px;
+    vertical-align: middle;
+    position: relative;
+    padding: 35px;
+    margin-bottom: 40px;
+}
+
+/* Stile dei controlli del modulo */
+.form-control {
+    border-color: #c0c0c0;
+}
+
+/* Pulsanti di accesso tramite social media */
+.social-btn {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.social-btn img {
+    height: 32px;
+    float: left;
+    margin-top: 10px;
+}
+
+.social-btn.google {
+    margin-top: 7px;
+}
+
+.social-btn.facebook img,
+.social-btn.github img {
+    height: 24px;
+    margin-left: 3px;
+}
+
+/* Stile del pulsante principale */
+.btn-primary-custom {
+    background-color: #004a51;
+    color: #ffffff;
+}
+
+/* Link per accedere */
+.login-link {
+    color: #000000;
+    font-size: 14px;
+}
+
+/* Titolo del modulo di registrazione */
+.signup-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+/* Testo 'or' per separare le opzioni di accesso */
+.or-text {
+    margin-left: 20px;
+    font-size: 1.0rem;
+    color: #000000;
+}
+
+/* Footer per il modulo di registrazione */
+.footer_signup {
+    background-color: #004a51;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.footer_signup-content {
+    color: #ffffff;
+    font-size: 1rem;
+}

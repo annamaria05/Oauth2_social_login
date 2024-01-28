@@ -1,0 +1,83 @@
+/* Stile Login */
+
+/* Aggiunge uno spazio sotto il box del login */
+.login-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Stile del box del login */
+.login-content {
+    background: #fff;
+    box-shadow: 0 1px 11px #004A51A1;
+    border-radius: 5px;
+    border-color: #004a51;
+    width: 500px;
+    display: inline-block;
+    margin-top: 65px;
+    vertical-align: middle;
+    position: relative;
+    padding: 35px;
+    margin-bottom: 60px;
+}
+
+/* Stile dei pulsanti social */
+.social-btn {
+    margin-bottom: 50px;
+    height: 50px;
+    border-color: #c0c0c0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Cambia il colore del testo del link quando il mouse passa sopra il bottone */
+.social-btn:hover {
+    color: #baab61;
+}
+
+/* Stile dei campi di input */
+.form-control {
+    border-color: #c0c0c0;
+}
+
+/* Stile del pulsante di accesso */
+.btn-primary-custom {
+    background-color: #004a51;
+    color: #ffffff;
+}
+
+/* Stile del link di registrazione */
+.signup-link {
+    color: #000000;
+    font-size: 14px;
+}
+
+/* Stile del titolo del login */
+.login-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+/* Stile del testo "or" */
+.or-text {
+    margin-left: 20px;
+    font-size: 1.0rem;
+    color: #000000;
+}
+
+/* Stile del footer del login */
+.footer_login {
+    background-color: #004a51;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 65px;
+}
+
+.footer_login-content {
+    color: #ffffff;
+    font-size: 1rem;
+}

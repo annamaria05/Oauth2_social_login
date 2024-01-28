@@ -1,0 +1,69 @@
+/* Stile profilo */
+
+.body {
+    overflow: hidden;
+}
+
+/* Container del profilo */
+.profile-container {
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+/* Informazioni sul profilo */
+.profile-info {
+    text-align: center;
+}
+
+/* Immagine del profilo */
+.profile-info .profile-avatar img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+/* Nome del profilo */
+.profile-info .profile-name {
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Email del profilo */
+.profile-info .profile-email {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Garamond", sans-serif;
+}
+
+/* Avatar di testo (senza immagine) */
+.text-avatar {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    background: #004a51;
+    background-image: linear-gradient(45deg, #004a51 1%, rgba(0, 74, 81, 0.63) 64%, rgba(67, 170, 215, 0.85) 97%);
+}
+
+.text-avatar span {
+    line-height: 200px;
+    color: #fff;
+    font-size: 3em;
+}
+
+/* Footer del profilo */
+.footer_profile {
+    background-color: #004a51;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 28.5rem;
+}
+
+.footer_profile-content {
+    color: #ffffff;
+    font-size: 1rem;
+}

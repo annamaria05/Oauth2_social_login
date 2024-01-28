@@ -1,0 +1,149 @@
+/* Stili per la sezione home */
+.home-container {
+    text-align: left;
+    min-height: calc(100vh - 60px);
+    overflow: hidden;
+    position: relative;
+    padding-top: 90px;
+}
+
+/* Stili per l'etichetta */
+label {
+    background-color: #004a51;
+    display: block;
+    padding: 8px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #baab61;
+}
+
+/* Stili per il campo di testo note */
+textarea#note {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1px;
+    font-size: 14px;
+    border: 1px solid #004a51;
+    box-sizing: border-box;
+}
+
+/* Stili per il pulsante "Salva note" */
+.button_notes {
+    background-color: #004a51;
+    border: 1px solid rgb(0, 74, 81);
+    border-radius: 4px;
+    color: #baab61;
+    cursor: pointer;
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 100%;
+    margin: 15px 45px;
+    position: relative;
+    padding: 10px 12px 12px;
+    text-align: center;
+    transition: box-shadow .05s ease-in-out, opacity .05s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 80%;
+}
+
+/* Stili per il titolo della sezione home */
+.home-title {
+    position: relative;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 120px; /* Modificabile per posizionare il titolo */
+}
+
+/* Layout flessibile per la sezione contenuto */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+/* Stili per il container dell'immagine */
+.image-container {
+    margin-right: 20px;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+/* Centra l'immagine orizzontalmente */
+.centered-image {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Stili per la sezione delle note precedenti */
+.profile-previous-notes {
+    margin-top: 20px;
+}
+
+/* Stili per la tabella delle note precedenti */
+.previous-notes-table {
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+.previous-notes-table th,
+.previous-notes-table td {
+    border: 1px solid #004a51;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Stili per l'intestazione della tabella delle note precedenti */
+.previous-notes-table th {
+    background-color: #004a51;
+    color: #baab61;
+}
+
+/* Stili per la visualizzazione delle note precedenti */
+.previous-note-display {
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Container per la tabella delle note precedenti */
+.previous-notes-table-container {
+    margin-top: 4rem;
+    margin-bottom: 400px;
+    flex: 1;
+    width: 100%;
+    margin-left: 15rem; /* Modificabile per posizionare il contenitore */
+}
+
+/* Stili per l'elemento h2 */
+.h2-home {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Animazione di dissolvenza */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Stili per il footer della sezione home */
+.footer_home {
+    background-color: #004a51;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer_home-content {
+    color: #ffffff;
+    font-size: 1rem;
+}

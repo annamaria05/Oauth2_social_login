@@ -1,0 +1,28 @@
+/* Stili per la pagina di errore 404 */
+.page-not-found {
+    max-width: 500px;
+    margin: 50px auto 0;
+    padding: 40px;
+    border: 1px solid #004a51;
+    text-align: center;
+}
+
+/* Stili per il titolo della pagina di errore */
+.page-not-found .title {
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+/* Stili per la descrizione della pagina di errore */
+.page-not-found .desc {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Stili per il pulsante "Indietro" */
+.go-back-btn {
+    min-width: 160px;
+    background-color: #004a51;
+}
+

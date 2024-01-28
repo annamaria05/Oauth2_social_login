@@ -1,0 +1,161 @@
+/* Stile generale */
+
+/* Normalizzazione box model per tutti gli elementi */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Applica la normalizzazione del box model prima e dopo gli elementi */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Impostazioni di base per il corpo del documento */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(0,0,0,.80);
+}
+
+/* Container principale con larghezza massima e margini automatici */
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Stili per i link */
+a {
+  color: #2098f3;
+  text-decoration: none;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #40a9ff;
+  text-decoration: none;
+}
+
+/* Stili per i pulsanti */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  height: 45px;
+  line-height: 45px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  position: relative;
+  color: #000000;
+  background-color: transparent;
+  outline: none;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-lg {
+  padding: 0 30px;
+}
+
+.btn-link {
+  border: none;
+  height: 34px;
+  padding: 0 15px;
+}
+
+.btn-link:hover {
+  background-color: rgba(158,158,158, 0.20);
+}
+
+/* Stili per i form */
+.form-item {
+  margin-bottom: 18px;
+}
+
+.form-item .btn {
+  cursor: pointer;
+}
+
+.form-item label {
+  font-size: 0.85em;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.form-control {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  padding: 4px 11px;
+  width: 100%;
+  height: 45px;
+  font-size: 0.87em;
+  line-height: 45px;
+  color: #000000;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  transition: all .3s;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.form-control:focus, .form-control:active {
+  box-shadow: 0 0 0 2px rgba(24,144,255,.2);
+}
+
+.form-label {
+  margin-bottom: 10px;
+}
+
+/* Separatore "O" */
+.or-separator {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 1em;
+}
+
+.or-text {
+  position: absolute;
+  left: 44%;
+  top: 0;
+  background: #fff;
+  padding: 10px;
+  color: rgba(0,0,0,.45);
+}

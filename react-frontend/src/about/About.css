@@ -1,0 +1,53 @@
+/* Stili per il container dell'about */
+.about-container {
+    text-align: left;
+    min-height: calc(100vh - 60px); /* Altezza minima pari al 100% dell'altezza del viewport meno 60px */
+    position: relative;
+    padding-top: 50px; /* Aggiunge padding nella parte superiore del container */
+    max-height: 150px; /* Imposta un'altezza massima per il container */
+    overflow-y: scroll; /* Abilita lo scorrimento verticale quando il contenuto supera l'altezza del container */
+}
+
+/* Stili per personalizzare la scrollbar */
+.about-container::-webkit-scrollbar {
+    width: 10px; /* Larghezza della scrollbar */
+}
+
+.about-container::-webkit-scrollbar-thumb {
+    background-color: #004a51; /* Colore della thumb della scrollbar */
+    border-radius: 5px; /* Bordo arrotondato per la thumb della scrollbar */
+}
+
+.about-container::-webkit-scrollbar-track {
+    background-color: #cfcfcf; /* Colore della track della scrollbar */
+}
+
+/* Stili per il titolo all'interno del container dell'about */
+.about-title {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.70);
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+/* Stili per il contenuto dell'about */
+.about-content {
+    font-size: 17px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+/* Stili per il footer dell'about */
+.footer_about {
+    background-color: #004a51;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer_about-content {
+    color: #ffffff;
+    font-size: 1rem;
+}

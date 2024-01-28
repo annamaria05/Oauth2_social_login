@@ -1,0 +1,15 @@
+/* Stili per la casella di avviso (alert box) */
+.s-alert-box {
+    min-width: 250px; /* Imposta la larghezza minima per la casella di avviso */
+}
+
+/* Stili per il corpo della pagina */
+body {
+    overflow: hidden; /* Impedisce lo scorrimento del corpo della pagina */
+}
+
+/* Stili per il pulsante di chiusura della casella di avviso */
+.s-alert-close::before,
+.s-alert-close::after {
+    width: 2px; /* Imposta la larghezza di pseudo-elementi prima e dopo il pulsante di chiusura */
+}
