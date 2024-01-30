@@ -1,6 +1,6 @@
 # NoteToDo 
 
-![App Screenshot] (login.png)
+![App Login] (Login.png)
 
 ## Per cominciare
 
