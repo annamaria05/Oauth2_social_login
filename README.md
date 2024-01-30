@@ -31,7 +31,8 @@ Di seguito viene riportata un'immagine che illustra quello che è il flusso di a
 
 ![App OAuth2](Architettura_Note.png)
 
-L'utente sceglie di effettuare il login: il processo inizia quindi dalla parte client dell'applicazione. Il server reindirizza, poi, l'utente all'URL di autorizzazione del provider scelto (*Google*, *Facebook*, *Github*). 
+L'utente sceglie di effettuare il login: il processo inizia quindi dalla parte client dell'applicazione.  
+Il server reindirizza, poi, l'utente all'URL di autorizzazione del provider scelto (*Google*, *Facebook*, *Github*). 
 
 In questo punto, l'utente può decidere se concedere o meno l'autorizzazione alla pagina del provider. Se l'utente concede l'autorizzazione, il provider invia un codice di autorizzazione, che dovrà poi essere validato, al callback URL.
 Se il codice è valido, allora il server scambierà questo con un token di accesso. 
