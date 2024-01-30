@@ -14,3 +14,4 @@ ReactDOM.render(
 
 // Registra il service worker per la gestione delle risorse in modalità offline
 registerServiceWorker();
+
