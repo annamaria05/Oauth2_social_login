@@ -1,4 +1,27 @@
 # NoteToDo 
+
+Sei troppo impegnato e non vuoi dimenticare i tuoi impegni? 
+Cerchi un modo per portare sempre con te la lista delle cose da fare? 
+
+NoteToDo è l'applicativo che fa per te! 
+
+Essa è stata realizzata puramente a scopo didattico ed è incentrata sul login tramite social attraverso OAuth2.
+
+## Cos'è OAuth2
+
+OAuth2 è un framework di autorizzazione che consente alle applicazioni di ottenere un accesso limitato agli account utente su un servizio HTTP.
+Esso consente agli utenti di concedere a un'applicazione l'accesso a servizi di terze parti (come Google, Facebook, ecc.) senza dover condividere le proprie credenziali di accesso con l'applicazione. 
+
+Invece di utilizzare le credenziali dirette dell'utente, OAuth2 utilizza "token" per ottenere l'accesso alle risorse. Esistono due tipi principali di token:
+
+ + Token di Accesso: Utilizzati per accedere alle risorse protette; hanno una durata limitata.
+ + Token di Refresh: Utilizzati per ottenere un nuovo token di accesso una volta che il 
+   precedente è scaduto.
+
+OAuth2 introduce il concetto di "scope" (ambiti) per limitare l'accesso a particolari set di dati. Quando un'applicazione richiede l'accesso, può specificare esattamente a quali informazioni è interessata.
+
+OAuth2 è progettato per essere sicuro quando correttamente implementato. Tuttavia, come per qualsiasi sistema di sicurezza, può essere soggetto a vulnerabilità se non configurato o mantenuto correttamente.
+
 > Home
 
 ![App Login](Home.png)
