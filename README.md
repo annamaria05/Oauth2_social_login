@@ -1,11 +1,12 @@
 # NoteToDo 
 
-Sei troppo impegnato e non vuoi dimenticare i tuoi impegni? 
+Sei troppo impegnato e non vuoi dimenticare i tuoi impegni?  
 Cerchi un modo per portare sempre con te la lista delle cose da fare? 
 
-NoteToDo è l'applicativo che fa per te! 
+*NoteToDo* è l'applicativo che fa per te! 
 
-Essa è stata realizzata puramente a scopo didattico ed è incentrata sul login tramite social attraverso OAuth2.
+Esso è stato realizzato puramente a scopo didattico: questo progetto è una dimostrazione del login tramite social con OAuth2 usando Spring Boot.
+
 
 ## Cos'è OAuth2
 
@@ -14,28 +15,52 @@ Esso consente agli utenti di concedere a un'applicazione l'accesso a servizi di 
 
 Invece di utilizzare le credenziali dirette dell'utente, OAuth2 utilizza "token" per ottenere l'accesso alle risorse. Esistono due tipi principali di token:
 
- + Token di Accesso: Utilizzati per accedere alle risorse protette; hanno una durata limitata.
- + Token di Refresh: Utilizzati per ottenere un nuovo token di accesso una volta che il 
-   precedente è scaduto.
+ + **Token di Accesso**: utilizzati per accedere alle risorse protette e hanno una durata 				 limitata.
+ + **Token di Refresh**: utilizzati per ottenere un nuovo token di accesso una volta che il 
+   			 precedente è scaduto.
 
 OAuth2 introduce il concetto di "scope" (ambiti) per limitare l'accesso a particolari set di dati. Quando un'applicazione richiede l'accesso, può specificare esattamente a quali informazioni è interessata.
 
 OAuth2 è progettato per essere sicuro quando correttamente implementato. Tuttavia, come per qualsiasi sistema di sicurezza, può essere soggetto a vulnerabilità se non configurato o mantenuto correttamente.
 
+## Flusso di autenticazione OAuth2
+
+Di seguito viene riportata un'immagine che illustra quello che è il flusso di autenticazione OAuth2 di NoteToDo.
+
+> Flusso OAuth2
+
+![App OAuth2](Architettura_Note.png)
+
+L'utente sceglie di effettuare il login: il processo inizia quindi dalla parte client dell'applicazione. Il server reindirizza, poi, l'utente all'URL di autorizzazione del provider scelto (*Google*, *Facebook*, *Github*). 
+
+In questo punto, l'utente può decidere se concedere o meno l'autorizzazione alla pagina del provider. Se l'utente concede l'autorizzazione, il provider invia un codice di autorizzazione, che dovrà poi essere validato, al callback URL.
+Se il codice è valido, allora il server scambierà questo con un token di accesso. 
+
+Dopodichè si richiedono i dettagli dell'utente autenticato e segue l'aggiunta dell'utente sul database o il suo aggiornamento. 
+Infine viene creato un JWT per l'utente ed esso viene reindirizzato all'URI fornito, con il JWT incluso come parametro della query string. 
+
 > Home
 
-![App Login](Home.png)
+![App Home](Home.png)
 
 > Login
 
 ![App Login](Login.png)
+
+## Dipendenze
+
+L'applicativo è realizzato con Spring Boot, MySQL e React.
+Assicurati di avere inserito le versioni qui indicate per il corretto funzionamento:
+
+ + *Spring boot 2.5.15*
+ + *Java 11*
 
 
 ## Per cominciare
 
 Clona questa repository usando il seguente comando:
 
-git clone: https://github.com/annamaria05/Oauth2_social_login.git
+```git clone: https://github.com/annamaria05/Oauth2_social_login.git```
 
 ## Configurazione ed esecuzione Frontend (react-frontend)
 Naviga fino alla directory:
@@ -51,6 +76,7 @@ Per la configurazione e l'esecuzione del frontend lancia i comandi:
 	npm install
  	npm start
  	
+Ti si aprirà una pagina web che riporta all'indirizzo: ```http://localhost:3000```
 
 ## Configurazione Backend (spring-social)
 
