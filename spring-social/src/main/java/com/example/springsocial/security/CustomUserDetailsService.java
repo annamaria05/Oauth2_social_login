@@ -1,3 +1,5 @@
+package com.example.springsocial.security;
+
 import com.example.springsocial.exception.ResourceNotFoundException;
 import com.example.springsocial.model.User;
 import com.example.springsocial.repository.UserRepository;
