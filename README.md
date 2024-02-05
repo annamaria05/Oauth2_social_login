@@ -160,7 +160,7 @@ Ti si aprirà una pagina web che riporta all'indirizzo: ```http://localhost:3000
 		    tokenExpirationMsec: 864000000
 
  	```
-  Per la generazione del token, puoi far utilizzo del seguente sito: https://randomkeygen.com/.
+
 
   
   Una volta registrate le applicazioni, assicurati di aver aggiunto "http://localhost:8080/oauth2/callback/<nome_provider>" come URI di reinidirizzamento autorizzato nel provider. 
